@@ -13,9 +13,9 @@ int countPairs1(int *arr, int len, int value) {
 }
 int countPairs2(int *arr, int len, int value) {
   int count = 0;
-  int j, fl = 0, point = len - 1;
+  int fl = 0, point = len - 1;
   for (int i = 0; i < len - 1; ++i) {
-    j = point;
+    int j = point;
     while (i < j) {
       int sum = arr[i] + arr[j];
       if (sum == value) {
